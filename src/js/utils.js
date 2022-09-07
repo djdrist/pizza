@@ -1,6 +1,6 @@
 /* global Handlebars, dataSource */
 
-const utils = {}; // eslint-disable-line no-unused-vars
+export const utils = {}; // eslint-disable-line no-unused-vars
 
 utils.createDOMFromHTML = function (htmlString) {
 	let div = document.createElement('div');
@@ -18,14 +18,7 @@ utils.serializeFormToObject = function (form) {
 	let output = {};
 	if (typeof form == 'object' && form.nodeName == 'FORM') {
 		for (let field of form.elements) {
-			if (
-				field.name &&
-				!field.disabled &&
-				field.type != 'file' &&
-				field.type != 'reset' &&
-				field.type != 'submit' &&
-				field.type != 'button'
-			) {
+			if (field.name && !field.disabled && field.type != 'file' && field.type != 'reset' && field.type != 'submit' && field.type != 'button') {
 				if (field.type == 'select-multiple') {
 					for (let option of field.options) {
 						if (option.selected) {
