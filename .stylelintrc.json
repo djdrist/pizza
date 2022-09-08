@@ -7,7 +7,7 @@
     "declaration-colon-space-after": "always",
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-trailing-semicolon": "always",
-    "indentation": 2,
+    "indentation": [2, { "severity": "warning" } ],
     "max-empty-lines": 2,
     "max-nesting-depth": [3, {
       "ignore": ["pseudo-classes"]
@@ -20,6 +20,8 @@
     "no-descending-specificity": null,
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/no-duplicate-dollar-variables": true,
-    "scss/no-global-function-names": null
+    "scss/no-global-function-names": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "declaration-block-no-shorthand-property-overrides": null
   }
 }

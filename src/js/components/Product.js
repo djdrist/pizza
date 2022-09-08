@@ -120,7 +120,7 @@ class Product {
 		});
 
 		thisProduct.element.dispatchEvent(event);
-		console.log(thisProduct);
+		//console.log(thisProduct);
 		//app.cart.add(thisProduct.prepareCartProduct());
 	}
 	prepareCartProduct() {
@@ -132,7 +132,7 @@ class Product {
 		productSummary.priceSingle = thisProduct.priceSingle;
 		productSummary.price = productSummary.priceSingle * productSummary.amount;
 		productSummary.params = thisProduct.prepareCartProductParams();
-		console.log('!', productSummary);
+		//console.log('!', productSummary);
 		return productSummary;
 	}
 	prepareCartProductParams() {
