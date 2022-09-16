@@ -17,7 +17,8 @@ class Carousel {
 			autoPlay: true,
 			cellAlign: 'left',
 			contain: true,
-			imagesLoaded: true,
+			//imagesLoaded: true,
+			groupCells: true,
 		});
 	}
 }

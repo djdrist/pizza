@@ -68,11 +68,31 @@
 }
 
 /* COMMENTS */
-.main-carousel {
-	background: white;
+
+.photo {
+	display: block;
+	background-image: url('../../images/pizza-3.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	width: 200px;
+	border-radius: 7px;
+	margin-bottom: 20px;
+}
+.opinion {
+	display: block;
+	width: 444px;
 }
 
-.main-carousel img {
-	display: block;
-	height: 400px;
+.photos {
+	overflow: hidden;
+}
+.photos img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	border-radius: 7px;
+}
+.photos a {
+	color: $color-main;
 }
