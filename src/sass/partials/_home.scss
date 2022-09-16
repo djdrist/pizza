@@ -1,0 +1,78 @@
+/* GLOBAL */
+
+.home-wrapper {
+	margin-top: 40px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+/* BOXES */
+
+.boxes {
+	padding-top: 40px;
+}
+
+.box-order,
+.box-booking,
+.box-hours {
+	height: 120px;
+	padding-top: 14px;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+	border: 3px solid white;
+	border-radius: 6px;
+	color: white;
+	font-size: 24px;
+	transition: 0.3s padding-top;
+}
+
+.box-order {
+	background-image: url('../../images/pizza-1.jpg');
+}
+.box-booking {
+	background-image: url('../../images/pizza-2.jpg');
+}
+.box-hours {
+	background-color: $color-main;
+	padding: 0px;
+}
+
+.box-booking span,
+.box-order span {
+	display: block;
+	font-size: 16px;
+	margin-top: 30px;
+	transition: 0.3s margin-top;
+}
+.box-hours span {
+	font-size: 18px;
+}
+.box-hours p {
+	margin-top: 16px;
+	margin-bottom: 0px;
+}
+.box-booking p,
+.box-order p {
+	margin-bottom: 0px;
+}
+.box-booking:hover,
+.box-order:hover {
+	cursor: pointer;
+	padding-top: 0px;
+}
+
+.box-booking:hover span,
+.box-order:hover span {
+	margin-top: 0px;
+}
+
+/* COMMENTS */
+.main-carousel {
+	background: white;
+}
+
+.main-carousel img {
+	display: block;
+	height: 400px;
+}
