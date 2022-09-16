@@ -85,6 +85,7 @@
 }
 
 .photos {
+	position: relative;
 	overflow: hidden;
 }
 .photos img {
@@ -92,7 +93,32 @@
 	width: 200px;
 	object-fit: cover;
 	border-radius: 7px;
+	background-color: black;
 }
 .photos a {
+	color: $color-main;
+}
+.icons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 32px;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	background-color: black;
+	width: 200px;
+	height: 200px;
+	border-radius: 7px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.photos:hover .overlay {
+	opacity: 0.8;
+}
+.icons i:hover {
 	color: $color-main;
 }
