@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class Carousel {
 	constructor(element) {
 		const thisCarousel = this;

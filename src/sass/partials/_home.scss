@@ -30,9 +30,11 @@
 .box-order {
 	background-image: url('../../images/pizza-1.jpg');
 }
+
 .box-booking {
 	background-image: url('../../images/pizza-2.jpg');
 }
+
 .box-hours {
 	background-color: $color-main;
 	padding: 0px;
@@ -45,17 +47,21 @@
 	margin-top: 30px;
 	transition: 0.3s margin-top;
 }
+
 .box-hours span {
 	font-size: 18px;
 }
+
 .box-hours p {
 	margin-top: 16px;
 	margin-bottom: 0px;
 }
+
 .box-booking p,
 .box-order p {
 	margin-bottom: 0px;
 }
+
 .box-booking:hover,
 .box-order:hover {
 	cursor: pointer;
@@ -79,15 +85,19 @@
 	border-radius: 7px;
 	margin-bottom: 20px;
 }
+
 .opinion {
 	display: block;
 	width: 444px;
 }
 
+/* GALLERY */
+
 .photos {
 	position: relative;
 	overflow: hidden;
 }
+
 .photos img {
 	height: 200px;
 	width: 200px;
@@ -95,9 +105,11 @@
 	border-radius: 7px;
 	background-color: black;
 }
+
 .photos a {
 	color: $color-main;
 }
+
 .icons {
 	position: absolute;
 	top: 50%;
@@ -117,9 +129,11 @@
 	opacity: 0;
 	transition: opacity 0.5s;
 }
+
 .photos:hover .overlay {
 	opacity: 0.8;
 }
+
 .icons i:hover {
 	color: $color-main;
 }
